@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', () => {
 		} else {
 			messageOne.textContent = `${ data.location }`
 			messageTwo.textContent = `
-				${ data.summary } ${data.temperature}°F, ${data.probability * 100}%, ${data.windSpeed} MPH
+				${ data.summary } The tempurature is ${data.temperature}°F with a ${data.probability * 100}% of precipetation. The wind speeds are ${data.windSpeed} MPH.
 			`
 		}
 	})
