@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', () => {
 		} else {
 			messageOne.textContent = `${ data.location }`
 			messageTwo.textContent = `
-				${ data.summary } ${data.temperature}°F, ${data.probability * 100}%
+				${ data.summary } ${data.temperature}°F, ${data.probability * 100}%, ${data.windSpeed} MPH
 			`
 		}
 	})

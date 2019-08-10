@@ -50,7 +50,7 @@ app.get('/weather', (req, res) => {
 			return res.send({ error });
 		};
 
-		forecast(latitude, longitude, (error, { summary, temperature, probability }) => {
+		forecast(latitude, longitude, (error, { summary, temperature, probability, windSpeed }) => {
 			if (error) {
 				return res.send({ error	});
 			};
@@ -59,7 +59,8 @@ app.get('/weather', (req, res) => {
 				location,
 				summary,
 				temperature,
-				probability
+				probability,
+				windSpeed
 			});
 		});
 	});
